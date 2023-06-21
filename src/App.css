@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bgContainer {
+  width: 100%;
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.appLogo {
+  width: 30%;
+  max-width: 200px;
+  align-self: flex-start;
+}
+
+.cardContainer1 {
+  background-color: #5763a5;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 900px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .cardContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .passwordManagerImage {
+    order: 1;
+  }
+}
+
+.passwordManagerImage {
+  width: 80%;
+  max-width: 400px;
+}
+
+.subCardContainer11 {
+  background-color: #454f84;
+  border-radius: 15px;
+  margin: 10px;
+  width: 95%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.addNewPassword {
+  text-align: left;
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  align-self: flex-start;
+  margin: 10px;
+}
+
+.inputFormContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputLogoAndInputContainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 40px;
+  margin: 10px;
+}
+
+.inputLogo {
+  height: 80%;
+}
+
+.inputArea {
+  width: 80%;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 1px solid #c3caea;
+  height: 100%;
+  padding-left: 10px;
+  outline: none;
+  background-color: none;
+}
+
+.addButton {
+  background-color: #0b69ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 15px;
+  height: 40px;
+  width: 100px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.cardContainer2 {
+  background-color: #5763a5;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 900px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.topSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yourPasswordContainer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yourPasswords {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.passwordsCount {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+  width: 30px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.passwordSearchContainer {
+  height: 30px;
+  width: 50%;
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.searchLogo {
+  height: 90%;
+}
+
+.searchInput {
+  height: 100%;
+  width: 90%;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 1px solid #c3caea;
+  padding-left: 10px;
+  outline: none;
+}
+
+.hrLine {
+  width: 95%;
+  height: 1px;
+  color: #94a3b8;
+  opacity: 0.5;
+}
+
+.checkBocContainer {
+  width: 50%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.checkBox {
+  height: 90%;
+}
+
+.showPasswords {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.noPasswordImage {
+  width: 80%;
+  max-width: 400px;
+}
+
+.noPasswordText {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.passwordUnorderedListContainer {
+  list-style-type: none;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.passwordListContainer {
+  background: none;
+  width: 90%;
+  max-width: 250px;
+  border: 1px solid #b6c3ca;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+.firstLetterContainer {
+  background-color: #0b69ff;
+  width: 15%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.firstLetter {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.credentialContainer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.credentials {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #ffffff;
+  align-self: flex-start;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.starsImage {
+  width: 90%;
+  height: 60%;
+}
+
+.deleteButtonContainer {
+  background: none;
+  border: none;
+  width: 10%;
+  height: 80%;
+  cursor: pointer;
+}
+
+.deleteButton {
+  height: 20px;
+}
